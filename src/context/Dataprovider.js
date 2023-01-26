@@ -6,6 +6,7 @@ export const Datacontext = createContext();
 export const DataProvider = (props) =>{
     const [productos, setProductos] = useState([])
     const [menu, setMenu] = useState(false)
+    
     const [carrito, setCarrito] = useState([])
     const [total, setTotal] = useState(0)
 

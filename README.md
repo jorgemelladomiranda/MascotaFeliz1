@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+Nombre programador: Jorge Mellado Miranda
+Profesor: Federico Osandon
+Nombre E-commerce: La mascota feliz, creado con React, comision #43545.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+para hacerlo funcionar debemos descargar repo de github luego npm install y por ultimo npm start la app correra en http://localhost:3000
+nombre deploy https://lamascotafeliz.netlify.app/
 
-## Available Scripts
+herramientas utilizadas:
 
-In the project directory, you can run:
+Create react app
+Visual Studio Code
+Node.js / v16.16.0
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dependencias adicionales:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#boxicons - con esta dependencia se agregaron los iconos
 
-### `npm test`
+Orden de archivos partiendo desde la base tenemos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Carpeta "src" contiene las carpetas con la cual hacemos funcionar el proyecto, dentro encontramos la carpeta "Components" la cual almacena todos los componentes de la aplicacion, tambien la funcionalidad del proyecto en si.
+dentro se encuentran subcarpetas como la de Productos el cual dentro almacena las secciones y sus funcionalidades.
+dentro del "src" estan las carpetas con los archivos multimedia como imagenes
+ y distintas carpetas como "context", "firebase", etc tambien encontraremos dentro de la carpeta src algunos archivos .js y el .css de estilos.
 
-### `npm run build`
+se utilizaron recursos de react como los contextos, hooks, etc para el rendering se uso router.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+con este proyecto se logro simular una e-commerce de alimentos y accesorios para mascotas con navegacion entre paginas simulacion de compra carrito con funcionalidad de sumar productos como asi tambien cards de productos con detalles

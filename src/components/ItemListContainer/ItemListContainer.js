@@ -6,13 +6,16 @@ export const ItemListContainer = () => {
 
     const value = useContext(Datacontext)
     const [productos] = value.productos
+    const alimentoPerro = productos.filter(
+        (producto) => producto.category === "Alimento de perro"
+    );
 
     return (
         <>
-        <h2 className='title'>Alimentos</h2>
+        <h2 className='title'>Alimentos de perro</h2>
         <div className='productos'>
             {
-                productos.map(producto =>(
+                alimentoPerro.map(producto =>(
                     <Item
                         key={producto.id}
                         id={producto.id}

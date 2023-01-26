@@ -27,13 +27,13 @@ export const Header = () => {
           <Link to="/">INICIO</Link>
         </li>
         <li>
-          <Link to="Alimentos">ALIMENTOS</Link>
+          <Link to="Alimentos">ALIMENTO PERRO</Link>
         </li>
         <li>
-          <Link to="Recomendaciones">RECOMENDACIONES</Link>
+          <Link to="AlimentoDeGatos">ALIMENTO GATO</Link>
         </li>
         <li>
-          <Link to="Contacto">CONTACTO</Link>
+          <Link to="Accesorios">ACCESORIOS</Link>
         </li>
         <div className="profile">
         {openProfile && <Login openModal={setOpenProfile} />}
