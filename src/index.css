@@ -164,6 +164,84 @@ header .cart span{
 
 }
 
+/*---- Productos Carritos----*/
+
+.cart-products{
+  padding-top: 90px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+
+
+.cart-products h2{
+  font-size: 20px;
+}
+.cart-products h3{
+  font-size: 17px;
+}
+.product{
+  padding-top: 90px;
+  display:flex ;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem 1rem;
+  box-sizing: border-box;
+
+}
+
+
+
+
+.img-cart{
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  gap: 2;
+}
+
+.btn-deleted{
+  text-align: center;
+  margin-left: 5px;
+  color: #fff;
+  background-Color: rgb(235, 23, 23);
+  border: none;
+  border-Radius: 20px;
+  padding: 10;
+  cursor: pointer;
+}
+
+
+
+.finalizacion{
+  padding-top: 90px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkgreen;
+  
+  
+}
+.finalizacion{
+  padding-bottom: 90px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkgreen;
+  
+}
+
+
+.fin-orden{
+  padding: 40px 0px 200px 0px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  color: darkgreen;
+}
+
 /*------ALIMENTOS------*/
 
 .title {

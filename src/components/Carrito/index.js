@@ -1,19 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Datacontext } from "../../context/Dataprovider";
 
-
 export const Carrito = () => {
-  const value = useContext(Datacontext);
-  const [menu, setMenu] = value.menu;
-  const [carrito, setCarrito] = value.carrito;
-  const [total] = value.total;
-  console.log(
-    carrito
-  )
+  const navigate = useNavigate()
+  const {totalPrice,carrito, setCarrito,menu, setMenu} = useContext(Datacontext);
 
   const tooglefalse = () => {
     setMenu(false);
   };
+
 
   const show1 = menu ? "carritos show" : "carritos";
   const show2 = menu ? "carrito show" : "carrito";
@@ -34,14 +30,6 @@ export const Carrito = () => {
     setCarrito([]);
   };
 
-
-    const payment = event => {
-    event.preventDefault();
-    alert("gracias por tu compra");
-    setMenu(false);
-    localStorage.clear();
-    window.location.reload();
-  };
   return (
     <div className={show1}>
       <div className={show2}>
@@ -63,8 +51,10 @@ export const Carrito = () => {
           ) : (
             <>
               {carrito.map(producto => {
+                console.log(producto)
                 return (
-                <div className="carrito__item" key={producto.id}>
+
+                  <div className="carrito__item" >
                   <img src={producto.image} alt="Imagen producto" />
                   <div>
                     <h3>{producto.title}</h3>
@@ -76,20 +66,17 @@ export const Carrito = () => {
                   <div
                     className="remove__item"
                     onClick={() => removeProducto(producto.id)}
-                  >
+                    >
                     <box-icon name="trash"></box-icon>
                   </div>
                 </div>
-
-
-)
-
+                    )
 })}
             </>
           )}
         </div>
         <div className="carrito__footer">
-          <h3>Total: ${total}</h3>
+          <h3>Total: ${totalPrice()}</h3>
           {carrito.length > 0 && (
             <button
               style={{
@@ -117,7 +104,7 @@ export const Carrito = () => {
                 padding: 10,
                 cursor: "pointer"
               }}
-              onClick={payment}
+              onClick={ ()=> navigate('/cart')}
             >
               Pagar
             </button>
